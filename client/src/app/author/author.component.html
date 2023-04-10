@@ -1,0 +1,48 @@
+<div class="font w-full h-24 text-3xl pt-12 pl-10 font-bold text-orange-400"> 
+  <p>🤖 Author Component</p>
+</div>
+
+
+
+
+<div class="w-full h-auto bg--200">
+
+    <div class="w-full h-auto flex  justify-between text-lg font-medium pt-20  ">
+      <div class="pl-5 text-xl text-orange-400 font-semibold">Total No of Authors : {{count}}</div>
+        
+        <a routerLink="addauthor" class="flex w-44 h-10 items-center justify-center text-white self-end bg-orange-400 cursor-pointer transition duration-100 hover:bg-orange-500 ease-in ">
+            <div>+</div>
+            <div class="ml-2">add author</div>
+        </a>
+    
+        <!-- <a routerLink="/books/updatebook/" class="flex w-32 h-10 items-center justify-center text-white self-end bg-orange-400 cursor-pointer transition duration-100 hover:bg-orange-500 ease-in ">
+          <mat-icon>add</mat-icon>
+          <p class="ml-2">add book</p>
+      </a> -->
+    </div>
+    
+    <div style="height:60vh" class="w-full  overflow-auto mx-3">
+    <table class="table-auto w-full px-3 border-orange-400 border mt-20">
+        <thead class="text-white bg-orange-400">
+          <tr>
+            <th class="px-4 py-2 border-r">Id</th>
+            <th class="px-4 py-2 border-r"> Name</th>
+            <th class="px-4 py-2 border-r">Birth Date</th>
+            <th class="px-4 py-2 border-r">Nationality</th>
+            <th class="px-4 py-2">Action</th>
+          </tr>
+        </thead>
+        <tr class="bg-gray-100" *ngFor="let data of data">
+          <td class="border px-4 py-2">{{data.id}}</td>
+          <td class="border px-4 py-2 whitespace-normal break-words">{{data.name}}</td>
+          <td class="border px-4 py-2">{{data.birthDate}}</td>
+          <td class="border px-4 py-2">{{data.nationality}}</td>
+          <td class="border px-4 py-2">
+              <div (click)="onClickDelete(data.id)" class="bg-orange-400 text-white cursor-pointer text-center transition duration-100 hover:bg-orange-500 ease-in">Delete</div>
+              <a routerLink="update/{{data.id}}" class="bg-orange-400 mt-1 text-white cursor-pointer text-center transition duration-100 hover:bg-orange-500 ease-in"><div class="bg-orange-400 mt-1 hover:bg-orange-500">Update</div></a>
+            </td>
+      </tr>
+      </table>
+    </div>
+    </div>
+  

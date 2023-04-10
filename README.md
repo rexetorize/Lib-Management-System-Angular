@@ -4,6 +4,13 @@
 
 This is a library management application designed to help libraries manage their collections and automate routine tasks. The application allows librarians to easily add, edit, and remove books from their collection, as well as manage loans and returns. This was my first time working on angular and it was one fun journey creating this web app.😀
 
+#Frontend Screenshots
+![image](https://user-images.githubusercontent.com/58749843/230893844-0164f635-3131-4c26-ba75-a95af667625a.png)
+
+![image](https://user-images.githubusercontent.com/58749843/230893719-d60bdc9a-0744-410a-87d1-53939d072f19.png)
+
+
+
 ## Features
 
 - Add, edit, and remove books from the collection
@@ -29,7 +36,7 @@ To install the application, follow these steps:
 
 ## Usage
 
-To use the application, open a web browser and navigate to `http://localhost:8080`. From there, you can log in with your administrator account and start managing your library's collection.
+To use the application, open a web browser and navigate to `http://localhost:8080`. This will get the backend up and running and for the frontend go to `http://localhost:4200`.
 
 ## Contributing
 

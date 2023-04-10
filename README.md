@@ -25,6 +25,11 @@ The application made in angular and Spring allows librarians to easily add, edit
 - Angular
 - Tailwind CSS
 
+## Prerequisites
+- Java11 (https://adoptopenjdk.net/releases.html)
+- Verify installed java version with : java -version
+- IDE (VSCode,Eclipse,IntelliJ IDEA)
+
 ## Installation
 
 To install the application, follow these steps:
